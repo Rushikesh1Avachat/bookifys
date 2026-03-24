@@ -4,11 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 import {usePathname} from "next/navigation";
 import { SignedIn, SignedOut, SignInButton, UserButton, useUser } from "@clerk/nextjs";
-import {cn} from "../lib/utils";
+import {cn} from "@/lib/utils";
 
 const navItems = [
     { label: "Library", href: "/" },
     { label: "Add New", href: "/books/new" },
+    { label: "Pricing", href: "/subscriptions" },
 ]
 
 const Navbar = () => {
